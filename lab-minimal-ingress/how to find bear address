@@ -1,0 +1,11 @@
+k get svc -n ingress-nginx
+
+NAME                                 TYPE           CLUSTER-IP      EXTERNAL-IP                                                                     PORT(S)                      AGE
+ingress-nginx-controller             LoadBalancer   100.69.66.185   ac5e0826b3ce3444bae2024dd5cec6e7-71a81bc20dd66200.elb.eu-west-1.amazonaws.com   80:31902/TCP,443:31605/TCP   23m
+ingress-nginx-controller-admission   ClusterIP      100.66.176.46   <none>                                                                          443/TCP                      23m
+
+ping ac5e0826b3ce3444bae2024dd5cec6e7-71a81bc20dd66200.elb.eu-west-1.amazonaws.com
+
+(52.213.171.138)
+
+52.213.171.138/bear/
